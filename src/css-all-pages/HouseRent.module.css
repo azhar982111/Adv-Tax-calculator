@@ -1,0 +1,108 @@
+.table{
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    text-align: left;
+    width: 80%;
+    border-spacing:0 10px;
+    font-size: 18px;
+    font-family: inherit;
+}
+
+.topDiv1{
+    background-color: #3b9ac6;
+    height: 50px;
+    width: 30%;
+}
+
+.topDiv1>h2{
+    font-size: 20px;
+    font-weight: 500;
+    height: 15px;
+    color: rgb(252, 252, 252);
+    /* border: 1px solid red; */
+    /* padding-top: 5px; */
+}
+
+
+.topDiv2{
+    background-color: #e0805a;
+    height: 50px;
+    width: 30%;
+    margin-left: 20%;
+}
+
+
+.topDiv2:hover
+{
+    box-shadow: 0 0 5px 8px rgb(224, 134, 107);
+    border: none;
+ }
+
+.topDiv2>h2{
+    font-size: 20px;
+    font-weight: 500;
+    height: 15px;
+    color: rgb(252, 252, 252);
+    /* border: 1px solid red; */
+    /* padding-top: 2px; */
+}
+
+.table :nth-child(1){
+    padding-left: 2%;
+    /* border: 1px solid red; */
+  
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+table input,select{
+    border: 1px solid rgb(211, 203, 203);
+    width: 90%;
+    height: 35px;
+    border-radius: 7px;
+    /* border: none; */
+}
+
+.tr2 select{
+    /* background: rgb(209, 37, 37); */
+    width: 132%;
+}
+
+tr:nth-child(odd){
+    /* background-color: rgb(210, 213, 212); */
+    background: linear-gradient(#f3f3f3,#e1e1e1);
+    height: 60px;
+}
+
+tr :nth-child(2){
+    /* background-color: red; */
+    width: 25%;
+}
+
+
+.buttonDiv{
+    margin-top: 15px;
+    margin-left: -20%;
+    /* background-color: rgb(215, 52, 52); */
+}
+
+.buttonDiv :nth-child(1){
+    background-color: rgb(215, 52, 52);
+    border: none;
+    width: 5%;
+    height: 30px;
+    color: blanchedalmond;
+}
+
+.buttonDiv :nth-child(2){
+    margin-left: 1%;
+    background-color: rgb(93, 87, 87);
+    border: none;
+    width: 5%;
+    height: 30px;
+    color: blanchedalmond;
+}

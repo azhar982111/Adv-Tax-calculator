@@ -1,0 +1,100 @@
+.table{
+    /* border: 1px solid red; */
+    text-align: left;
+    width: 80%;
+    border-spacing:0 10px;
+    
+}
+
+.topDiv{
+    background-color: #3b9ac6;
+    height: 50px;
+    width: 60%;
+   /* border: 1px solid red; */
+}
+
+.topDiv>h2{
+    font-size: 20px;
+    font-weight: 500;
+    height: 15px;
+    color: rgb(252, 252, 252);
+    /* border: 1px solid red; */
+    /* padding-top: 10px; */
+}
+
+
+.backBtn:hover
+{
+    box-shadow: 0 0 5px 8px rgb(184, 135, 121);
+    border: none;
+ }
+
+.backBtn{
+    background-color: rgb(236, 113, 36);
+    border: none;
+    height: 40px;
+    width: 200%;
+    color: #f3f3f3;
+    font-size: 20px;
+    border-radius: 19px;
+    margin-left: 85%;
+    margin-top: 8%;
+}
+
+.table :nth-child(1){
+    padding-left: 2%;
+    /* border: 1px solid red; */
+  
+}
+
+table input,select{
+    /* border: 1px solid red; */
+    width: 90%;
+    /* border: none; */
+}
+
+.tr2 select{
+    /* background: rgb(209, 37, 37); */
+    width: 132%;
+}
+
+tr:nth-child(odd){
+    /* background-color: rgb(210, 213, 212);  */
+    /* background: linear-gradient(#bf3a3a,#eb0a0a); */
+    background: linear-gradient(#f3f3f3,#e1e1e1);
+    height: 60px;
+}
+
+tr :nth-child(2){
+    /* background-color: red; */
+    width: 25%;
+}
+
+
+.buttonDiv{
+    margin-top: 15px;
+    margin-left: -20%;
+    /* background-color: rgb(215, 52, 52); */
+}
+
+.buttonDiv :nth-child(1){
+    background-color: rgb(215, 52, 52);
+    border: none;
+    width: 5%;
+    height: 30px;
+    color: blanchedalmond;
+}
+
+.buttonDiv :nth-child(2){
+    margin-left: 1%;
+    background-color: rgb(93, 87, 87);
+    border: none;
+    width: 5%;
+    height: 30px;
+    color: blanchedalmond;
+}
+
+.IncomeFromHouseProperty{
+    background: red;
+    border-collapse: collapse !important;
+}
