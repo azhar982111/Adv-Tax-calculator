@@ -1,10 +1,9 @@
-import { useState } from "react"
+import { useRef, useState } from "react"
 import { useNavigate } from "react-router-dom";
 import styles from "../css-all-pages/Home.module.css"
 
 
 export default function AdvanceTaxCalculator() {
-
 
     let initstate = {
         taxpayer: "",
@@ -39,6 +38,7 @@ export default function AdvanceTaxCalculator() {
 
     let [data, setData] = useState(initstate)
     // let [value, setValue] = useState("")
+    let ref = useRef(null)
 
     const { taxpayer, Section115BAC, netTaxableIncome, incomeTax, Surcharge, educationCess, secondaryHigherEducation, totalTaxLiability, relief, TDS_TCS_MAT, assessedTax, Section115BAD, Section115BAE, gender, residentialStatus, incomeFromSalary, incomeFromHouseProperty, interestonHousingLoan, selfOccupiedHouseProperty, annualLetableValue, municipalTaxesPaid, unrealizedRent, netAnnualValue, standardDeduction, interestOnHousingLoan2, incomeFromLetOutHouse } = data;
 
@@ -118,14 +118,8 @@ export default function AdvanceTaxCalculator() {
     }
 
     function reset(){
-        setData((prevFormData) => ({
-            ...prevFormData,
-            "incomeTax": "",
-            "Surcharge": "",
-            "educationCess":"",
-            "totalTaxLiability":"",
-            "assessedTax":""
-        }));
+        setData(initstate)
+        // ref.current.value = null
     }
 
     if (taxpayer === "") {
@@ -289,37 +283,37 @@ export default function AdvanceTaxCalculator() {
 
                     <tr>
                         <td> Income Tax</td>
-                        <td><input name="incomeTax" value={incomeTax}></input></td>
+                        <td><input ref={ref} name="incomeTax" value={incomeTax}></input></td>
                     </tr>
 
                     <tr>
                         <td> Surcharge</td>
-                        <td><input name="Surcharge" value={Surcharge}></input></td>
+                        <td><input ref={ref} name="Surcharge" value={Surcharge}></input></td>
                     </tr>
 
                     <tr>
                         <td> Health and Education Cess</td>
-                        <td> <input name="educationCess" value={educationCess}></input></td>
+                        <td> <input ref={ref} name="educationCess" value={educationCess}></input></td>
                     </tr>
 
                     <tr>
                         <td>Total Tax Liability</td>
-                        <td><input name="totalTaxLiability" value={totalTaxLiability}></input></td>
+                        <td><input ref={ref} name="totalTaxLiability" value={totalTaxLiability}></input></td>
                     </tr>
 
                     <tr>
                         <td>Relief</td>
-                        <td> <input onChange={handleChange} name="relief" value={relief}></input></td>
+                        <td> <input ref={ref} onChange={handleChange} name="relief" value={relief}></input></td>
                     </tr>
 
                     <tr>
                         <td>TDS/TCS/MAT (AMT) Credit Utilized</td>
-                        <td><input onChange={handleChange} name="TDS_TCS_MAT" value={TDS_TCS_MAT}></input></td>
+                        <td><input ref={ref} onChange={handleChange} name="TDS_TCS_MAT" value={TDS_TCS_MAT}></input></td>
                     </tr>
 
                     <tr>
                         <td>Assessed Tax</td>
-                        <td> <input name="assessedTax" value={assessedTax}></input></td>
+                        <td> <input ref={ref} name="assessedTax" value={assessedTax}></input></td>
                     </tr>
 
                 </table>
