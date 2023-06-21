@@ -4,34 +4,7 @@ import styles from "../css-all-pages/Home.module.css"
 
 
 export default function AdvanceTaxCalculator() {
-    let copyInitstate = {
-        taxpayer: "",
-        Section115BAC: "",
-        netTaxableIncome: "",
-        incomeTax: "",
-        Surcharge: "",
-        educationCess: "",
-        secondaryHigherEducation: "",
-        totalTaxLiability: "",
-        relief: "",
-        TDS_TCS_MAT: "",
-        assessedTax: "",
-        Section115BAD: "",
-        Section115BAE: "",
-        gender: "",
-        residentialStatus: "",
-        incomeFromSalary: "",
-        incomeFromHouseProperty: "",
-        interestonHousingLoan: "",
-        selfOccupiedHouseProperty: "",
-        annualLetableValue: "",
-        municipalTaxesPaid: "",
-        unrealizedRent: "",
-        netAnnualValue: "",
-        standardDeduction: "",
-        interestOnHousingLoan2: "",
-        incomeFromLetOutHouse: ""
-    }
+
 
     let initstate = {
         taxpayer: "",
